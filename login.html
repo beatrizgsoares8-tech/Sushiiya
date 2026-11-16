@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Login e Cadastro</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header class="cabecalho">
+    <div id="inicio"><a href="index.html">Pagina Inicial</a></div>
+    <a class="logo" href="#">Sushiya</a>
+ 
+    <ul>
+      <li><a href="#pedidos">Cardápio</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
+      <li><a href="#contato">Contato</a></li>
+      </ul>
+      <button onclick="ModoBrilho()"><img src="sol.png" alt="" width="20px"></button>
+ 
+  </header>
+  <main>
+    <div class="opcao">
+          <div class="Cadastro">
+        <h2>Cadastro</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome completo">
+        <label for="cpf">CPF:</label>
+        <input type="text" id="cpf" placeholder="000.000.000-00">
+        <label for="emailCadastro">Email:</label>
+        <input type="email" id="emailCadastro" placeholder="Seu email">
+        <label for="senhaCadastro">Senha:</label>
+        <input type="password" id="senhaCadastro" placeholder="Crie sua senha">
+        <button onclick="CriarConta()">Criar Conta</button>
+    </div>
+
+    <!-- LOGIN -->
+    <div class="Login">
+        <h2>Login</h2>
+        <label for="emailLogin">Email:</label>
+        <input type="email" id="emailLogin" placeholder="Digite seu email">
+        <label for="senhaLogin">Senha:</label>
+        <input type="password" id="senhaLogin" placeholder="Digite sua senha">
+        <button onclick="EntrarLogin()">Entrar</button>
+    </div>
+    <p class="aviso" id="aviso" aria-live="polite"></p>
+  </main>
+    <script src="script.js"></script>
+</body>
+</html>

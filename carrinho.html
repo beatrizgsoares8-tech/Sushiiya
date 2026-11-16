@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sushiya | Carrinho</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+
+    <header class="cabecalho">
+        <a href="login.html">
+            <img src="perfil.png" width="30" alt="Perfil">
+        </a>
+        <a class="logo" href="index.html">Sushiya</a>
+
+        <ul>
+            <li><a href="produtos.html">Cardápio</a></li>
+            <li><a href="pedidos.html">Pedidos</a></li>
+            <li><a href="index.html">Página Inicial</a></li>
+        </ul>
+
+        <button onclick="ModoBrilho()">
+            <img src="sol.png" width="20" alt="Modo claro">
+        </button>
+    </header>
+
+    <main class="meio">
+        <section class="titulo">
+            <p class="etiqueta">Seus favoritos estão aqui</p>
+            <h1>Meu <span>Carrinho</span></h1>
+            <p>Confira seus produtos antes de finalizar.</p>
+        </section>
+
+        <section class="caixa">
+            <div id="itensCarrinho">
+                <!-- Produtos adicionados aparecem aqui -->
+            </div>
+
+            <p id="carrinhoVazio" class="aviso">
+                Seu carrinho está vazio.
+            </p>
+
+            <div class="total">
+                <h3>Total:</h3>
+                <h3 id="totalCarrinho">R$ 0,00</h3>
+            </div>
+
+            <button class="botao" onclick="finalizarPedido()">
+                Finalizar pedido
+            </button>
+
+            <a href="produtos.html" class="voltar">
+                Continuar comprando
+            </a>
+
+     </section>
+
+    </main>
+    <footer>
+        <div>
+            <a class="logo" href="index.html">Sushiya</a>
+            <p>Copyright © 2026 Sushiya</p>
+        </div>
+  <div>
+            <h3>Contato</h3>
+            <p>WhatsApp: (11) 99999-9999</p>
+            <p>Aberto todos os dias, das 18h às 23h</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    background: #000;
+    color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.cabecalho {
+    min-height: 75px;
+    padding: 15px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    border-bottom: 1px solid #333;
+}
+
+#inicio a {
+    color: #bbb;
+}
+
+#inicio a:hover {
+    color: #e33b32;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.cabecalho ul {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    list-style: none;
+    color: #bbb;
+}
+
+.cabecalho ul a:hover {
+    color: #e33b32;
+}
+
+.cabecalho button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+main {
+    width: 100%;
+    min-height: calc(100vh - 75px);
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.opcao {
+    width: 100%;
+    max-width: 950px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.opcao > div {
+    background: #171717;
+    padding: 30px;
+    border: 1px solid #383838;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.opcao > div:hover {
+    border-color: #e33b32;
+}
+
+.opcao h2 {
+    color: #e33b32;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.opcao label {
+    display: block;
+    color: #eee;
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size: 15px;
+}
+
+.opcao input {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #444;
+    border-radius: 6px;
+    background: #252525;
+    color: white;
+    font-size: 15px;
+    outline: none;
+}
+
+.opcao input::placeholder {
+    color: #999;
+}
+
+.opcao button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 6px;
+    background: #e33b32;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.opcao button:hover {
+    background: #c92e27;
+}
+
+.aviso {
+    text-align: center;
+    color: #ff7770;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.claro {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.claro .cabecalho {
+    border-color: #ddd;
+}
+
+.claro .cabecalho ul,
+.claro #inicio a {
+    color: #555;
+}
+
+.claro .opcao > div {
+    background: white;
+    border-color: #ddd;
+}
+
+.claro .opcao label {
+    color: #222;
+}
+
+.claro .opcao input {
+    background: #f5f5f5;
+    color: #111;
+    border-color: #ccc;
+}
+@media (max-width: 700px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .cabecalho ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    main {
+        padding: 35px 5%;
+    }
+    .opcao {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+    }
+    .opcao > div {
+        padding: 25px;
+    }
+}

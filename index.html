@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushiya | Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <a href="login.html"><img src="perfil.png" width="30px"  alt=""></a>
+    <a class="logo" href="#">Sushiya</a>
+ 
+    <ul>
+      <li><a href="#pedidos">Cardápio</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      <li><a href="produtos.html">Produtos</a></li>
+      </ul>
+
+          <button onclick="ModoBrilho()"><img src="sol.png" alt="" width="20px"></button>
+          <button><a href="carrinho.html"><img src="carrinho.png" alt="" width="30px"></a></button>
+ 
+  </header>
+ 
+  <main>
+    <section class="destaque">
+      <div>
+        <p class="etiqueta">Sabor japonês feito com carinho</p>
+        <h1>Uma experiência, <span>japonesa.</span></h1>
+        <p>Para viver e lembrar</p>
+        <a class="botao" href="#pedidos">Reserve Já</a>
+      </div>
+ 
+      <img
+        src="https://t3.ftcdn.net/jpg/16/84/30/06/360_F_1684300610_0FeM0zRVySqbUl5mcJorEB3Z97bJfx6P.jpg"
+        alt="Combinado de sushi"
+      >
+    </section>
+ 
+    <section class="secao" id="pedidos">
+      <p class="etiqueta">Escolha o seu favorito</p>
+      <h2>Mais pedidos</h2>
+ 
+      <div class="cardapio">
+        <section class="prato">
+          <img
+            src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=700&q=80"
+            alt="Combinado de sushi"
+          >
+          <div class="pratoinf">
+            <div>
+              <h3>Combo Salmão</h3>
+              <p>16 peças variadas</p>
+            </div>
+            <strong>R$ 49,90</strong>
+          </div>
+          <button onclick="adicionarPedido(1)" class="botao">Adicionar ao pedido</button>
+        </section>
+ 
+        <section class="prato">
+          <img
+            src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=700&q=80"
+            alt="Sushi variado"
+          >
+          <div class="pratoinf">
+            <div>
+              <h3>Combo Especial</h3>
+              <p>24 peças variadas</p>
+            </div>
+            <strong>R$ 69,90</strong>
+          </div>
+          <button onclick="adicionarPedido(2)" class="botao">Adicionar ao pedido</button>
+        </section>
+ 
+        <section class="prato">
+          <img
+            src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=700&q=80"
+            alt="Sashimi e sushi"
+          >
+          <div class="pratoinf">
+            <div>
+              <h3>Combo da Casa</h3>
+              <p>32 peças para compartilhar</p>
+            </div>
+            <strong>R$ 89,90</strong>
+          </div>
+          <button onclick="adicionarPedido(3)" class="botao">Adicionar ao pedido</button>
+        </section>
+      </div>
+ 
+      <p class="aviso" id="aviso" aria-live="polite"></p>
+    </section>
+ 
+    <section class="sobre" id="sobre">
+      <div>
+        <p class="etiqueta">Sobre Nós</p>
+        <h2>Feito com cuidado, servido com sabor.</h2>
+        <p>
+         O Sushiya nasceu da paixão pela autêntica culinária japonesa<br>
+         aliada ao desejo de proporcionar momentos inesquecíveis. Nossa missão é unir tradição, técnica e ingredientes selecionados para levar até você a verdadeira arte do sushi.
+        </p>
+      </div>
+    </section>
+  </main>
+ 
+  <footer id="contato">
+    <div>
+      <a class="logo" href="#">Sushiya</a>
+      <p>Copyright © 2026 Udon Restaurante</p>
+    </div>
+    <div>
+      <h3>Contato</h3>
+      <p>WhatsApp: (11) 99999-9999</p>
+      <p>Aberto todos os dias, das 18h às 23h</p>
+    </div>
+  </footer>
+ 
+  <script src="script.js"></script>
+</body>
+</html>

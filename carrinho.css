@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.cabecalho {
+    padding: 16px;
+    min-height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    border-bottom: 2px solid #2b2b2b;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight:300;
+}
+
+.cabecalho ul {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    color: #ccc;
+}
+
+.cabecalho ul a:hover {
+    color: #e33b32;
+}
+
+.cabecalho button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.meio {
+    flex: 1;
+    padding: 50px ;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    font-size: 2.5rem;
+    margin: 10px;
+}
+
+.titulo h1 span {
+    color: #e33b32;
+}
+
+.titulo p {
+    color: #bbb;
+}
+
+.etiqueta {
+    color: #e33b32;
+}
+.caixa {
+    max-width: 700px;
+    margin: auto;
+    padding: 25px;
+    background: #171717;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: 1px solid #444;
+    border-radius: 7px;
+}
+
+.item-carrinho h3 {
+    color: #ff7770;
+}
+
+.item-carrinho p {
+    color: #ccc;
+}
+
+.aviso {
+    text-align: center;
+    color: #bbb;
+    margin: 20px 0;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+
+.total h3:last-child {
+    color: #ff7770;
+}
+.botao {
+    display: block;
+    width: 100%;
+    margin-top: 22px;
+    padding: 13px;
+    border: none;
+    border-radius: 6px;
+    background: #e33b32;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao:hover {
+    background: #c92e27;
+}
+
+.voltar {
+    display: block;
+    margin-top: 18px;
+    text-align: center;
+    color: #ccc;
+}
+
+.voltar:hover {
+    color: #e33b32;
+}
+footer {
+    padding: 30px 8%;
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    border-top: 1px solid #333;
+}
+
+footer p {
+    color: #bbb;
+}
+.claro {
+    background: #f5f5f5;
+    color: #111;
+}
+
+.claro .cabecalho,
+.claro footer {
+    border-color: #ddd;
+}
+
+.claro .caixa {
+    background: white;
+    border-color: #ddd;
+}
+
+.claro .item-carrinho {
+    border-color: #ddd;
+}
+
+.claro .item-carrinho p,
+.claro .titulo p,
+.claro .voltar,
+.claro footer p {
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cabecalho ul {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .titulo h1 {
+        font-size: 2rem;
+    }
+
+    .caixa {
+        padding: 18px;
+    }
+
+    .item-carrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}

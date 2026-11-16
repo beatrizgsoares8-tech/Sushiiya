@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sushiya | Delivery</title>
+  <link rel="stylesheet" href="produtos.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <a href="login.html"><img src="perfil.png" width="30px"  alt=""></a>
+    <a class="logo" href="#">Sushiya</a>
+ 
+    <ul>
+      <li><a href="#pedidos">Cardápio</a></li>
+      <li><a href="#sobre">Sobre nós</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="pedidos.html">Pedidos</a></li>
+      </ul>
+
+          <button onclick="ModoBrilho()"><img src="sol.png" alt="" width="20px"></button>
+          <button><a href="carrinho.html"><img src="carrinho.png" alt="" width="30px"></a></button>
+ 
+  </header>
+  <main>
+
+         <section class="titulo">
+        <h1>Nosso <span>Cardápio</span></h1>
+        <p>Escolha seus favoritos e aproveite nossos deliciosos sushis!</p>
+    </section>
+
+    <input type="text" class="pesquisa" id="pesquisa" placeholder="Pesquisar produtos...">
+
+    <section class="cardapio">
+
+        <div class="prato">
+            <h3>Combo Sushiya</h3>
+            <p>Uma seleção especial de sushis variados.</p>
+            <strong>R$ 49,90</strong>
+            <button class="botao" onclick="adicionarPedido('Combo Sushiya', 49.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="prato">
+            <h3>Sashimi de Salmão</h3>
+            <p>Fatias de salmão fresco, saborosas e delicadas.</p>
+            <strong>R$ 34,90</strong>
+            <button class="botao" onclick="adicionarPedido('Sashimi de Salmão', 34.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="prato">
+            <h3>Hot Roll</h3>
+            <p>Enrolado empanado e crocante.</p>
+            <strong>R$ 29,90</strong>
+            <button class="botao" onclick="adicionarPedido('Hot Roll', 29.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="prato">
+            <h3>Uramaki</h3>
+            <p>Arroz por fora, alga e recheio especial.</p>
+            <strong>R$ 27,90</strong>
+            <button class="botao" onclick="adicionarPedido('Uramaki', 27.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="prato">
+            <h3>Temaki de Salmão</h3>
+            <p>Temaki recheado com salmão e arroz.</p>
+            <strong>R$ 24,90</strong>
+            <button class="botao" onclick="adicionarPedido('Temaki de Salmão', 24.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+        <div class="prato">
+            <h3>Hot Filadélfia</h3>
+            <p>Uma combinação de salmão e cream cheese.</p>
+            <strong>R$ 32,90</strong>
+            <button class="botao" onclick="adicionarPedido('Hot Filadélfia', 32.90)">
+                Adicionar ao carrinho
+            </button>
+        </div>
+
+    </section>
+ 
+      <div class="cardapio">
+        <section class="prato">
+          <img
+            src="https://images.unsplash.com/photo-1579584425555-c3ce17fd4351?auto=format&fit=crop&w=700&q=80"
+            alt="Combinado de sushi"
+          >
+          <div class="pratoinf">
+            <div>
+              <h3>Combo Salmão</h3>
+              <p>16 peças variadas</p>
+            </div>
+            <strong>R$ 49,90</strong>
+          </div>
+          <button onclick="adicionarPedido()" class="botao">Adicionar ao pedido</button>
+        </section>
+ 
+        <section class="prato">
+          <img
+            src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=700&q=80"
+            alt="Sushi variado"
+          >
+          <div class="pratoinf">
+            <div>
+              <h3>Combo Especial</h3>
+              <p>24 peças variadas</p>
+            </div>
+            <strong>R$ 69,90</strong>
+          </div>
+          <button onclick="adicionarPedido()" class="botao">Adicionar ao pedido</button>
+        </section>
+ 
+        <section class="prato">
+          <img
+            src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=700&q=80"
+            alt="Sashimi e sushi"
+          >
+          <div class="pratoinf">
+            <div>
+              <h3>Combo da Casa</h3>
+              <p>32 peças para compartilhar</p>
+            </div>
+            <strong>R$ 89,90</strong>
+          </div>
+          <button onclick="adicionarPedido()" class="botao">Adicionar ao pedido</button>
+        </section>
+      </div>
+ 
+      <p class="aviso" id="aviso" aria-live="polite"></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
